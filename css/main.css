@@ -1,11 +1,8 @@
-*box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
 /* Place CSS styles here */
 html {
     scroll-behavior: smooth;
-}
-
-a:hover {
-    color: rgb(64, 185, 64);
 }
 
 
@@ -14,71 +11,100 @@ body{
     background: #c7ced4;
     color: black;
     font-size: 30px;
-
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .header {
     padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 4px #51585e;
+    background: #fff;
+}
+
+.header nav{
+    display: flex;
+    justify-content: center;
+    box-sizing:border-box;
+}
+
+.header nav a {
+    color: rgb(31, 28, 28);
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.parallax {
+    background-image: url('img/glaciers.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px;
     box-sizing:border-box;
 
-    
-
-    
 }
-    .header nav a {
-        color: rgb(31, 28, 28);
-        text-decoration: none;
-        margin: 15px;
-        font-size: 18px;
-    }
-    .header nav a:hover {
-        text-decoration: underline;
-    }
+
+
+.locations {
+    background: #fff;
+    box-shadow: 0 2px 4px #51585e;
+    position: center;
+    top: 0;
+   
+}
+.locations nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing:border-box;
+}
+.locations nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 14px;
+    position: relative;
+}
+
 
 .text {
     text-align: center;
     padding: 50px;
     box-sizing:border-box;
-
-    
 }
-.locations {
-      background: #fff;
-      box-shadow: 0 2px 4px #51585e;
-      position: center;
-      top: 0;
-     
-  }
-  .locations nav {
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      box-sizing:border-box;
-  }
-  .locations nav a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 40px;
-      font-size: 14px;
-      position: relative;
-  }
 
-  .logo {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 40px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 8px;
-      color: #fff;
-      text-align: center;
-      margin-top: 50px;
-      padding: 100px;
-      box-sizing:border-box;
+.content {
+    padding: 50px;
+    text-align: center;
+}
 
-  }
 
 .blog-container{
     display:flex;
@@ -86,4 +112,11 @@ body{
     gap:30px;
     justify-content: center;
 }
-  
+
+footer {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px #51585e;
+    background: #fff;
+}
+      
