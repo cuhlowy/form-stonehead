@@ -18,6 +18,7 @@ body{
 .container{
     width: 90%;
     max-width: 1200px;
+    min-height: 120vh;
     margin: 0 auto;
     padding: 20px;
 }
@@ -46,7 +47,7 @@ body{
 }
 
 .parallax {
-    background-image: url('img/glaciers.jpg');
+    background-image: url(../img/glaciers.jpg);
     height: 500px;
     background-size: cover;
     background-position: center;
