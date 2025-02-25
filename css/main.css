@@ -22,10 +22,10 @@ body{
 }
 
 .header {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 2px 4px #51585e;
-    background: #fff;
+    background: #778c9f;
 }
 
 .header nav{
@@ -35,10 +35,10 @@ body{
 }
 
 .header nav a {
-    color: rgb(31, 28, 28);
+    color: #fff;
     text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
+    margin: 20px;
+    font-size: 25px;
 }
 .header nav a:hover {
     text-decoration: underline;
@@ -67,26 +67,81 @@ body{
     right: 0;
     height: 100%;
     width: 250px; /* Adjust width as needed */
-    background-color: #fff;
+    background-color: #778c9f;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transform: translateX(100%); /* Initially slide out to the left */
     transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; 
   }
 
-  @media (max-width: 768px) {
-    .menu {
-			flex-direction: column;
-			padding: 20px;
-		}
-	}
 
   .menu.expanded {
     transform: translateX(0); /* Slide in when expanded */
   }
 
-  .menu-toggle {
-    /* Style the menu button as needed */
-  }
+ /* Style the menu button */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+/* Create the three hamburger lines */
+.menu-toggle .hamburger,
+.menu-toggle .hamburger::before,
+.menu-toggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+/* Position the middle line */
+.menu-toggle .hamburger {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%,-50%);
+}
+
+/* Position the top line */
+.menu-toggle .hamburger::before {
+    top: -8px;
+    left: 0;
+    position: absolute;
+}
+
+/* Position the bottom line */
+.menu-toggle .hamburger::after {
+    bottom: -8px;
+    left: 0;
+    position: absolute;
+}
+
+/* When menu is active (open), transform into an "X" */
+.menu-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-toggle.active .hamburger::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
 
   @media (min-width: 768px) {
   .offcanvas-nav {
@@ -142,30 +197,18 @@ body{
 
 }
 
-@media screen and (max-width: 1024px) {
-    .logo {
-        font-size: 35px; /* Slightly smaller */
-        padding: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .logo {
-        font-size: 28px; /* Reduce title size */
-        padding: 30px;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .logo {
-        font-size: 24px; /* Even smaller for mobile */
+        font-size: 22px;  /* Reduce title size for small screens */
         padding: 20px;
+        letter-spacing: 4px; /* Reduce letter spacing */
+        max-width: 90%;
     }
 }
 
 
 .locations {
-    background: #fff;
+    background: #778c9f;
     box-shadow: 0 2px 4px #51585e;
     position: center;
     top: 0;
@@ -178,7 +221,7 @@ body{
     box-sizing:border-box;
 }
 .locations nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     margin: 0 40px;
     font-size: 14px;
