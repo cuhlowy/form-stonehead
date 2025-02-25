@@ -7,3 +7,4 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded',!expanded);
   menu.classList.toggle('expanded');
 });
+
