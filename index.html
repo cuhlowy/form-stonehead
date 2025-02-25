@@ -5,6 +5,7 @@
   <title>Stonehead Traveler</title>
   <meta name="description" content="Explore the beauty of the Nordic countries.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,7 +13,9 @@
 <body id="top">
 
   <header class="header">
-    <nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">Menu</button>
+    <nav id="offcanvas-menu" class="menu">
+      
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="blog.html">Blog</a>
