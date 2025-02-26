@@ -10,22 +10,27 @@ body{
     color: black;
     font-size: 30px;
     margin: 0;
+    padding: 0%;
     font-family: Arial, sans-serif;
 }
 
 .container{
-    width: 90%;
-    max-width: 1200px;
-    min-height: 120vh;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    padding: 10px;
+    padding: 0;
     text-align: center;
     box-shadow: 0 2px 4px #51585e;
     background: #778c9f;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .header nav{
@@ -37,7 +42,7 @@ body{
 .header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 20px;
+    margin: 15px;
     font-size: 25px;
 }
 .header nav a:hover {
@@ -163,7 +168,7 @@ body{
 .parallax {
     background-image: url(../img/glaciers.jpg);
     min-height: 500px;
-
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -171,7 +176,12 @@ body{
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
+    margin:0;
+    padding: 0;
+    position: relative;
     text-align: center;
+    margin-top: 0;
+    padding-top:0;
   }
 
   @media screen and (max-width: 768px) {
@@ -208,7 +218,7 @@ body{
 
 
 .locations {
-    background: #778c9f;
+    background: #9cb5c9;
     box-shadow: 0 2px 4px #51585e;
     position: center;
     top: 0;
